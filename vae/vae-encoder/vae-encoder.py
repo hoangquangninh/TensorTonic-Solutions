@@ -18,8 +18,8 @@ def vae_encoder(x: np.ndarray, latent_dim: int) -> tuple:
     b_logvar = np.zeros(latent_dim)
 
     # Hidden layer
-    h = x @ W1 + b1
-    h = np.tanh(h)
+    h= x @ W1 + b1
+    h= np.tanh(h)
 
     # Output layers
     mu = h @ W_mu + b_mu
